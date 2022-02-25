@@ -3,7 +3,7 @@ define({
     //default web map, default app color theme and more. These values can be overwritten by template configuration settings
     //and url parameters.
     "appid": "",
-    "webmap": "4b762458c7994fc08b4994a2dc76e9fc",
+    "webmap": "f1464978fa174ecaba8b210b6d71cff3",
     "oauthappid": "arcgisWebApps",
     //Enter the url to the proxy if needed by the applcation. See the "Using the proxy page" help topic for details
     //http://developers.arcgis.com/en/javascript/jshelp/ags_proxy.html
@@ -32,10 +32,10 @@ define({
     "defaultBasemap": "topo",
     "nextBasemap": "hybrid",
     "swipeLayer": [{
-      "fields": [],
-      "id": ""
+        "fields": [],
+        "id": "ee8b369eb44540d49fdd1ec00667daba"
     }],
-     "locationSearch": true,
+    "locationSearch": true,
     //When searchExtent is true the locator will prioritize results within the current map extent.
     "searchExtent": false,
     "searchLayers":[{
@@ -46,15 +46,15 @@ define({
     "swipeInvertPlacement": false,
     "hideNotesLayerPopups": true,
     "enableFlickr": true,
-    "flickrVisible": false,
-    "flickrSearch": "",
+    "flickrVisible": true,
+    "flickrSearch": "Oregon King Tide",
     "flickrTime": "",
-    "enableTwitter": true,
+    "enableTwitter": false,
     "twitterVisible": false,
     "twitterSearch": "",
-    "enableWebcams": true,
+    "enableWebcams": false,
     "webcamsVisible": false,
-    "enableYouTube": true,
+    "enableYouTube": false,
     "youtubeVisible": false,
     "youtubeSearch": "",
     "youtubeTime": "all_time", // today, this_week, this_month, all_time
@@ -84,6 +84,6 @@ define({
         },
         "geocode": [{
             "url": null
-           }]
+        }]
     }
 });

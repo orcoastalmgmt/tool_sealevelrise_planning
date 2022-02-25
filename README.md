@@ -1,1 +1,5 @@
-# tool_sealevelrise_planning
+# Sea Level Rise Planning Area Mapping Tool
+
+To help assess the areas at risk from sea level rise in Oregon, OCMP put together a planning area on the Coastal Atlas, called the Sea Level Rise Planning Area. This map provides graphical estimates of the expected locations of sea water inundation and coastal erosion 30-50 years into the future. This planning horizon is long enough for cities and counties to execute remedial actions, but short enough to provide a reasonably accurate view of future conditions. As in all predictions, the further out into the future we look the fuzzier the view. 
+
+The Sea Level Rise Planning Area is a combination of multiple data sources meant to serve as a planning tool. The dataset is not regulatory unless a jurisdiction decides to adopt it. There are three main geographies covered by the sea level rise planning area (outer coast, estuaries, and Columbia River) that are comprised of different datasets meant to approximate the areas that will be impacted by sea level rise now and into the future, using the best available data at this time. Mapping for all zones is not available for entire Oregon Coast – there are gaps. Fortunately, most of the developed areas of the Oregon Coast are covered.

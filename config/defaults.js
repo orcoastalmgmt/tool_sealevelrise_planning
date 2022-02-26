@@ -11,16 +11,16 @@ define({
     //Example of a template specific property. If your template had several color schemes
     //you could define the default here and setup configuration settings to allow users to choose a different
     //color theme.
-    "title": "",
-    "summary": "",
-    "defaultPanel": "legend",
+    "title": "Sea Level Rise Planning Area Mapping Tool",
+    "summary": "This map provides graphical estimates of the expected locations of sea water inundation and coastal erosion 30-50 years into the future. This planning horizon is long enough for cities and counties to execute remedial actions, but short enough to provide a reasonably accurate view of future conditions.",
+    "defaultPanel": "about",
     "enableSummaryInfo": true,
     "enableLegendPanel": true,
     "enableAboutPanel": true,
     "enableLayersPanel": true,
     "enableHomeButton": true,
     "enableLocateButton": true,
-    "enableBasemapToggle": true,
+    "enableBasemapToggle": false,
     "enableShareDialog": true,
     "enableBookmarks": true,
     "enableOverviewMap": true,
@@ -70,7 +70,7 @@ define({
     //Enter the url to your organizations bing maps key if you want to use bing basemaps
     "bingmapskey": "",
     //Defaults to arcgis.com. Set this value to your portal or organization host name.
-    "sharinghost": "https://www.arcgis.com",
+    "sharinghost": "https://geo.maps.arcgis.com/",
     "units": null,
     "helperServices": {
         "geometry": {

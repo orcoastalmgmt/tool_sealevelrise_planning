@@ -1,4 +1,4 @@
-# Sea Level Rise Planning Area Mapping Tool
+# Sea Level Rise Impact Explorer
 
 To help assess the areas at risk from sea level rise in Oregon, OCMP put together a planning area on the Coastal Atlas, called the Sea Level Rise Planning Area. This map provides graphical estimates of the expected locations of sea water inundation and coastal erosion 30-50 years into the future. This planning horizon is long enough for cities and counties to execute remedial actions, but short enough to provide a reasonably accurate view of future conditions. As in all predictions, the further out into the future we look the fuzzier the view. 
 

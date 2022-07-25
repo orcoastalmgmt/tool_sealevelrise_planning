@@ -80,7 +80,7 @@ define([
           desktopGeocoderTheme: "geocoder-desktop",
           mobileGeocoderTheme: "geocoder-mobile",
           appLoading: "app-loading",
-          appError: "app-error"
+          appError: "app-error",
         };
         // pointer event support
         if (this._pointerEventsSupport()) {
@@ -458,36 +458,51 @@ define([
           if (lang.isString(this.config.swipeLayer)) {
             this.config.swipeLayer = JSON.parse(this.config.swipeLayer);
           }
+          //
+          // function parseLayerId(id) {
+          //   return typeof id === "string" ? id.split(".")[0] : "";
+          // }
 
-          function parseLayerId(id) {
-            return typeof id === "string" ? id.split(".")[0] : "";
-          }
+          // // multiple swipe layers
+          // if (lang.isArray(this.config.swipeLayer)) {
+          //   for (var j = 0; j < this.config.swipeLayer.length; j++) {
+          //     var lyr = this.map.getLayer(parseLayerId(this.config.swipeLayer[j].id));
+          //     if (lyr) {
+          //       layers.push(lyr);
+          //     }
+          //   }
+          // }
+          // // one swipe layer
+          // else if (this.config.swipeLayer.id) {
+          //   var layer = this.map.getLayer(parseLayerId(this.config.swipeLayer.id));
+          //   if (layer) {
+          //     layers.push(layer);
+          //   }
+          // }
+          // var layer = 1
+          // layers.push(layer);
 
-          // multiple swipe layers
-          if (lang.isArray(this.config.swipeLayer)) {
-            for (var j = 0; j < this.config.swipeLayer.length; j++) {
-              var lyr = this.map.getLayer(parseLayerId(this.config.swipeLayer[j].id));
-              if (lyr) {
-                layers.push(lyr);
-              }
-            }
-          }
-          // one swipe layer
-          else if (this.config.swipeLayer.id) {
-            var layer = this.map.getLayer(parseLayerId(this.config.swipeLayer.id));
-            if (layer) {
-              layers.push(layer);
-            }
-          }
           // we have swipe layers
           if (layers.length) {
             // get swipe tool
-            require(["esri/dijit/LayerSwipe"], lang.hitch(this, function (LayerSwipe) {
+            require(["esri/dijit/LayerSwipe", "esri/layers/ArcGISDynamicMapServiceLayer"], lang.hitch(this, function (LayerSwipe, ArcGISDynamicMapServiceLayer) {
+
+              layer = new ArcGISDynamicMapServiceLayer(
+                  "https://gis.lcd.state.or.us/server/rest/services/Projects/OCMP_ClimateChangePlanning/MapServer/0",{
+                    "opacity": 0.5
+                  })
+              layers.pop()
+
+            //  layer = this.map.getLayer(0);
+              layers.push(layer);
+
+
               // create swipe
               var layerSwipe = new LayerSwipe({
-                type: this.config.swipeType,
+                type: "horizontal",
                 theme: "PIMSwipe",
-                invertPlacement: this.config.swipeInvertPlacement,
+                invertPlacement: false,
+                visible: true,
                 map: this.map,
                 layers: layers
               }, "swipeDiv");

@@ -23,7 +23,7 @@ define({
     "enableBasemapToggle": false,
     "enableShareDialog": true,
     "enableBookmarks": true,
-    "enableOverviewMap": true,
+    "enableOverviewMap": false,
     "openOverviewMap": false,
     "enableModifiedDate": true,
     "enableViewsCount": true,
@@ -32,8 +32,8 @@ define({
     "defaultBasemap": "topo",
     "nextBasemap": "hybrid",
     "swipeLayer": [{
-        "fields": [],
-        "id": "ee8b369eb44540d49fdd1ec00667daba"
+        "id": "ee8b369eb44540d49fdd1ec00667daba",
+        "fields": []
     }],
     "locationSearch": true,
     //When searchExtent is true the locator will prioritize results within the current map extent.
@@ -43,7 +43,7 @@ define({
         "fields": []
     }],
     "swipeType": "vertical",
-    "swipeInvertPlacement": false,
+    "swipeInvertPlacement": true,
     "hideNotesLayerPopups": true,
     "enableFlickr": true,
     "flickrVisible": true,

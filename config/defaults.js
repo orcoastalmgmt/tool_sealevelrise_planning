@@ -13,7 +13,7 @@ define({
     //color theme.
     "title": "Sea Level Rise Impacts Explorer",
     "summary": "This map provides graphical estimates of the expected locations of sea water inundation and coastal erosion 30-50 years into the future. This planning horizon is long enough for cities and counties to execute remedial actions, but short enough to provide a reasonably accurate view of future conditions.",
-    "defaultPanel": "about",
+    "defaultPanel": "layers",
     "enableSummaryInfo": true,
     "enableLegendPanel": true,
     "enableAboutPanel": true,
@@ -46,7 +46,7 @@ define({
     "swipeInvertPlacement": true,
     "hideNotesLayerPopups": true,
     "enableFlickr": true,
-    "flickrVisible": true,
+    "flickrVisible": false,
     "flickrSearch": "Oregon King Tide",
     "flickrTime": "",
     "enableTwitter": false,
